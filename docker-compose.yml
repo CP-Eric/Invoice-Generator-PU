@@ -1,0 +1,10 @@
+services:
+  invoice-generator:
+    build: .
+    container_name: invoice-generator
+    restart: always
+    volumes:
+      - /tmp:/tmp
+      - .:/app
+    ports:
+      - "8000:8000"
