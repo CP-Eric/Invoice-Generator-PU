@@ -26,7 +26,7 @@ fi
 echo "Starting Gunicorn..."
 exec gunicorn main:app \
     -k uvicorn.workers.UvicornWorker \
-    --bind 0.0.0.0:5000 \
+    --bind 0.0.0.0:3000 \
     --workers 2 \
     --timeout 120 \
     --access-logfile '-' \
